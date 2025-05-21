@@ -1,0 +1,48 @@
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Local configuration
+.env
+.codegpt
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Private keys and certificates
+*.pem
+*.key
+
+# CSV and Excel data files (optional - uncomment if you want to exclude them)
+csv/
+*.csv
+*.xlsx
+
+# Project specific directories
+esgp/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
