@@ -65,7 +65,7 @@ export const metricsAPI = {
 
 export class WebSocketClient {
   private ws: WebSocket | null = null;
-  private reconnectTimeout: NodeJS.Timeout | null = null;
+  private reconnectTimeout: ReturnType<typeof setTimeout> | null = null;
   private handlers: Map<string, (data: any) => void> = new Map();
 
   connect(onOpen?: () => void) {

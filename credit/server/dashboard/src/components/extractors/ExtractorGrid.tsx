@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import type { Extractor } from '../../features/extractors';
 import ExtractorCard from './ExtractorCard';
 

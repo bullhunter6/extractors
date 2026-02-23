@@ -16,8 +16,6 @@ import {
   TrendingDown,
   AlertTriangle,
   Loader2,
-  RefreshCw,
-  Settings,
   BarChart3,
   Zap,
   Timer,
@@ -27,7 +25,7 @@ import {
   Skull
 } from 'lucide-react';
 import { useScheduleStatus, useSchedulerStats, useUpdateScheduleConfig, useTriggerAll, useStopAll, useRecentRuns } from './api';
-import { formatDistanceToNow, format } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 
 interface LogEntry {
   timestamp: string;
@@ -38,7 +36,7 @@ interface LogEntry {
   task_id?: string;
 }
 
-const WS_BASE = 'ws://localhost:8000';
+const WS_BASE = `ws://${window.location.host}`;
 
 // Stat Card Component
 const StatCard: React.FC<{

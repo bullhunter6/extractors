@@ -1,18 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  ArrowLeft, 
-  Play, 
-  Clock, 
-  CheckCircle, 
-  XCircle, 
-  Activity,
-  Terminal,
-  History,
-  Settings,
-  RefreshCw,
-  Loader2,
-  AlertTriangle
+  Terminal
 } from 'lucide-react';
 
 interface LogEntry {

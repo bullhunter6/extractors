@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -10,18 +10,16 @@ import {
   Activity,
   Terminal as TerminalIcon,
   History,
-  RefreshCw,
   Loader2,
   AlertTriangle,
   ChevronDown,
-  ChevronRight,
-  ExternalLink
+  ChevronRight
 } from 'lucide-react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { TerminalLogViewer } from '../../components/terminal';
 
-const API_BASE = 'http://localhost:8000/api/v1';
-const WS_BASE = 'ws://localhost:8000';
+const API_BASE = '/api/v1';
+const WS_BASE = `ws://${window.location.host}`;
 
 interface Extractor {
   id: number;

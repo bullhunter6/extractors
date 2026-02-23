@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Play, CheckCircle2, XCircle, Clock, Loader2, Database, BarChart3, ExternalLink } from 'lucide-react';
+import { Play, CheckCircle2, XCircle, Clock, Loader2, Database, ExternalLink } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import type { Extractor } from '../../features/extractors';
 
