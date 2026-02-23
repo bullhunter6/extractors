@@ -19,7 +19,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { TerminalLogViewer } from '../../components/terminal';
 
 const API_BASE = '/api/v1';
-const WS_BASE = `ws://${window.location.host}`;
+const WS_BASE = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}`;
 
 interface Extractor {
   id: number;

@@ -36,7 +36,7 @@ interface LogEntry {
   task_id?: string;
 }
 
-const WS_BASE = `ws://${window.location.host}`;
+const WS_BASE = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}`;
 
 // Stat Card Component
 const StatCard: React.FC<{
